@@ -35,7 +35,7 @@ class brainfuck
 					if($this->pointer>255) $this->pointer = 1;
 				break;
 				case '+':
-					++$this->stack[$this->pointer];
+					@++$this->stack[$this->pointer];
 				break;
 				case '-':
 					--$this->stack[$this->pointer];
